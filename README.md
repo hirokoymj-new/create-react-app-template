@@ -1,4 +1,4 @@
-# Starter React App Template
+# Starter Template for React App
 
 1. Creating React app using `create-react-app` command with `clean-cra` template.
 
@@ -6,6 +6,12 @@
 
 ```js
 npx create-react-app client --template clean-cra
+```
+
+2. Run react app
+
+```js
+yarn start
 ```
 
 **Official Documents:**
