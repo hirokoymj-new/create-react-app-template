@@ -1,17 +1,19 @@
 import React from "react";
+import config from "Config/config";
+import { TestView } from "PageView/TestView";
+
+const URI = config.URI;
+
+console.log(config);
 
 const App = () => {
-  console.log("NODE_ENV:", process.env.NODE_ENV);
-  console.log("REACT_APP_STAGE:", process.env.REACT_APP_STAGE);
-
-  const title =
-    process.env.NODE_ENV === "procition" ? "TITLE: PRODUCTION" : "TITLE: LOCAL";
+  // console.log("NODE_ENV:", process.env.NODE_ENV);
+  // console.log("REACT_APP_STAGE:", process.env.REACT_APP_STAGE);
 
   return (
-    <div className="App">
-      Hello World
-      <h1>{title}</h1>
-      <h1>{process.env.REACT_APP_URI}</h1>
+    <div>
+      <TestView />
+      {URI}
     </div>
   );
 };
