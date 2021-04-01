@@ -4,7 +4,8 @@ const App = () => {
   console.log("NODE_ENV:", process.env.NODE_ENV);
   console.log("REACT_APP_STAGE:", process.env.REACT_APP_STAGE);
 
-  const tile = process.env.NODE_ENV === "procition" ? "PRODUCTION" : "LOCAL";
+  const title =
+    process.env.NODE_ENV === "procition" ? "TITLE: PRODUCTION" : "TITLE: LOCAL";
 
   return (
     <div className="App">
