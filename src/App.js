@@ -11,7 +11,7 @@ const App = () => {
     <div className="App">
       Hello World
       <h1>{title}</h1>
-      <h1>{process.env.REACT_APP_STAGE}</h1>
+      <h1>{process.env.REACT_APP_URI}</h1>
     </div>
   );
 };
